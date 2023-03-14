@@ -46,7 +46,9 @@ public class RequestResponse {
         System.out.println(response.header("Server"));
 
         //Headers nasil yazdirilir.
+        System.out.println("--------------------- HEADERS --------------------");
         System.out.println(response.getHeaders());
+        System.out.println("--------------------- ////// --------------------");
 
         //Time nasil yazdirilir.
         System.out.println("Time :"+response.getTime());

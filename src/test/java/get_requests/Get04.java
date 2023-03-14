@@ -51,7 +51,8 @@ public class Get04 extends JsonPlaceHolderBaseUrl {
 
 
 
-
+//        hasSize()===>eleman sayisini assert eder
+//        hasItem()===>hasItems() ==> containsAll() methodu gibi birden fazla objenin içerilip içerilmediğini assert eder.
 
 
 

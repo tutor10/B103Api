@@ -48,7 +48,7 @@ public class Get02 {
         System.out.println(response.asString().contains("Not Found"));
 
         // Response body does not contain "TechProEd"
-        //assertFalse() methodu,method parantezi icindeki degerin false olmasi durumunda test "fail" olur
+        //assertFalse() methodu,method parantezi icindeki degerin true olmasi durumunda test "fail" olur
         assertFalse(response.asString().contains("TechProEd"));
         System.out.println(response.asString().contains("TechProEd"));
 

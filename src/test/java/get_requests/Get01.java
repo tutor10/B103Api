@@ -6,6 +6,7 @@ import io.restassured.response.Response;
 
 import static io.restassured.RestAssured.get;
 import static io.restassured.RestAssured.given;
+
 public class Get01 {
     /*
         Given
@@ -21,21 +22,23 @@ public class Get01 {
           */
 
     @Test
-    public void get01(){
+    public void get01() {
 //        i)Set the URL
-       String url = "http://restful-booker.herokuapp.com/booking/55";
+        String url = "http://restful-booker.herokuapp.com/booking/50";
 //
 //        ii)Set the expected data
 //
 //        iii)Send the request and get the response
-        Response response = given().when().get(url);
+        Response response = given().when().get(url);//User sends a GET Request to the url
         response.prettyPrint();
 
 //       iv)Do assertion
         response.
                 then().
-                statusCode(200).//HTTP Status Code should be 200
+                statusCode(200).//HTTP Status Code should be 200---assertThat()'i  statusCode(200)' un yerine de kullanabiliriz,ayni sonucu verir
                 contentType("application/json").// Content Type should be JSON
                 statusLine("HTTP/1.1 200 OK");//Status Line should be HTTP/1.1 200 OK
+
     }
+
 }
