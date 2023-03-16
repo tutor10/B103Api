@@ -32,6 +32,13 @@ public class Post01 extends JsonPlaceHolderBaseUrl {
                                     "id": 201
                                     }
      */
+    /*
+    De-Serialization : Json datanin Java objesine cevrilmesi
+    Serialization : Java objesinin,Json dataya cevrilmesi
+    2 turlu De-Serialization yapacagiz :
+     i)Gson : Google tarafindan uretilmistir.
+    ii)Object Mapper: En popüleridir
+     */
 
     @Test
     public void post01(){
