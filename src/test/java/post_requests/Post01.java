@@ -46,9 +46,9 @@ public class Post01 extends JsonPlaceHolderBaseUrl {
         //Set the URL
         spec.pathParam("first","todos");
 
-        //Set the expected data===>Payload
+        //Set the expected data===>Payload==>karsi tarafa gonderecegimiz data
         Map<String, Object> expectedData = new HashMap<>();
-        expectedData.put("userId",55.0);
+        expectedData.put("userId",55);
         expectedData.put("title","Tidy your room");
         expectedData.put("completed",false);
         System.out.println("expectedData = " + expectedData);

@@ -36,7 +36,7 @@ public class Get01 {
         response.
                 then().
                 statusCode(200).//HTTP Status Code should be 200---assertThat()'i  statusCode(200)' un yerine de kullanabiliriz,ayni sonucu verir
-                contentType("application/json").// Content Type should be JSON
+                contentType("application/json").// Content Type should be JSON contentType(ContentType.JSON)
                 statusLine("HTTP/1.1 200 OK");//Status Line should be HTTP/1.1 200 OK
 
     }

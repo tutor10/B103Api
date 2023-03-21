@@ -39,7 +39,7 @@ public class Get06 extends HerOkuAppBaseUrl {
     @Test
     public void get06(){
         //Set the URL
-        spec.pathParams("first","booking","second",23);
+        spec.pathParams("first","booking","second",97);
 
         //Set the expected data
 
@@ -85,7 +85,7 @@ public class Get06 extends HerOkuAppBaseUrl {
         softAssert.assertEquals(jsonPath.getString("additionalneeds"),"midnight snack","checkout uyuşmadı");
 
 
-        //3.softAssert.assertALL() diyerek dogrulamayi kontrol et.Aksi taktirde test hep "PASS" olur
+        //3.softAssert.assertAll() diyerek dogrulamayi kontrol et.Aksi taktirde test hep "PASS" olur
         softAssert.assertAll();
 
     }
