@@ -39,10 +39,10 @@ public class Get08 extends JsonPlaceHolderBaseUrl {
 
         //Set the excepted data
         JsonPlaceHolderTestData obj = new JsonPlaceHolderTestData();
-        Map<String,Object> expectedData = obj.expectedDataMethod(1,"quis ut nam facilis et officia qui",false);
-        expectedData.put("id",2);
-        expectedData.put("Via","1.1 vegur");
-        expectedData.put("Server","cloudflare");
+        Map<String, Object> expectedData = obj.expectedDataMethod(1, "quis ut nam facilis et officia qui", false);
+        expectedData.put("id", 2);
+        expectedData.put("Via", "1.1 vegur");
+        expectedData.put("Server", "cloudflare");
 
         System.out.println("expectedData = " + expectedData);
 
@@ -51,20 +51,21 @@ public class Get08 extends JsonPlaceHolderBaseUrl {
         response.prettyPrint();
 
         //Do Assertion
-       Map<String,Object> actualData =  response.as(HashMap.class);//De-Serialization
+        Map<String, Object> actualData = response.as(HashMap.class);//De-Serialization
         System.out.println("actualData = " + actualData);
 
-        assertEquals(200,response.statusCode());
-        assertEquals(expectedData.get("completed"),actualData.get("completed"));
-        assertEquals(expectedData.get("title"),actualData.get("title"));
-        assertEquals(expectedData.get("userId"),actualData.get("userId"));
-        assertEquals(expectedData.get("id"),actualData.get("id"));
+        assertEquals(200, response.statusCode());
+        assertEquals(expectedData.get("completed"), actualData.get("completed"));
+        assertEquals(expectedData.get("title"), actualData.get("title"));
+        assertEquals(expectedData.get("userId"), actualData.get("userId"));
+        assertEquals(expectedData.get("id"), actualData.get("id"));
 
         //And header "Via" is "1.1 vegur"
-        assertEquals(expectedData.get("Via"),response.header("Via"));
+        assertEquals(expectedData.get("Via"), response.header("Via"));
 
         //And header "Server" is "cloudflare"
-        assertEquals(expectedData.get("Server"),response.header("Server"));;
+        assertEquals(expectedData.get("Server"), response.header("Server"));
+        ;
 
     }
 
