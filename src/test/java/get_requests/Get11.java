@@ -1,7 +1,7 @@
 package get_requests;
 
 import base_urls.GoRestBaseUrl;
-import groovyjarjarantlr4.v4.codegen.model.SrcOp;
+
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 import org.junit.Test;

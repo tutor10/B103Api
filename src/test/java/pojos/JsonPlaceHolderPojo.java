@@ -50,5 +50,6 @@ public class JsonPlaceHolderPojo {
                 ", title='" + title + '\'' +
                 ", completed=" + completed +
                 '}';
+
     }
 }

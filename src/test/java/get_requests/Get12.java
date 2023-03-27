@@ -35,7 +35,7 @@ public class Get12 extends HerOkuAppBaseUrl {
     @Test
     public void get12(){
         //Set the URL
-        spec.pathParams("first","booking","second",535);
+        spec.pathParams("first","booking","second",449);
 
         //Set the expected data
         BookingDatesPojo bookingDatesPojo = new BookingDatesPojo("2018-01-01","2019-01-01");
